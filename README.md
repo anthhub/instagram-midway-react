@@ -1,6 +1,6 @@
 ## 说明
 
-此项目并非原创, 源码来自于 zhoushaw 老师, 感谢 zhoushaw 老师的开源 ;), 原项目链接: https://github.com/zhoushaw/Instagram.git
+此项目并非原创, 源码来自于 zhoushaw , 感谢 zhoushaw 的开源 ;), 原项目链接: https://github.com/zhoushaw/Instagram.git
 
 前段时间了解到阿里的 Midway 框架 (基于 eggjs 的 Ioc 框架), 感受一下 Midway 的优雅, 重写了项目后台部分
 
@@ -140,4 +140,4 @@ class Upload extends React.Component{
 - [x] 发帖 -- 完成
 - [x] 收藏 -- 未完成
 
-> 再次感谢原作者 zhoushaw 老师 和 Midway 团队! ^_^
+> 再次感谢原作者 zhoushaw 和 Midway 团队! ^_^
