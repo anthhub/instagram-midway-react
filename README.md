@@ -22,11 +22,11 @@
  前后端分离开发模式，前端项目与后端项目属于不同的工程
 
 ```javascript
-// instagram/client 前端工程
-// instagram/service 后端工程
+// instagram-midway-react/client 前端工程
+// instagram-midway-react/service 后端工程
 ```
 
-注：此项目纯属个人瞎搞，与 instagram 无任何关系。
+注：此项目与 instagram 无任何关系。
 
 ## 部分功能截图
 
