@@ -1,0 +1,15 @@
+{
+  "presets": ["env", "react", "stage-0"],
+  "plugins": [
+    "transform-decorators-legacy",
+    "transform-runtime",
+    [
+        "import",
+        {
+            "libraryName": "antd",
+            "libraryDirectory": "es",
+            "style": "css"
+        }
+    ]
+ ]
+}

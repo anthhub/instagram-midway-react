@@ -1,0 +1,28 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "target": "ES2017",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "noImplicitThis": false,
+        "noUnusedLocals": true,
+        "stripInternal": true,
+        "pretty": true,
+        "declaration": true,
+        "outDir": "dist",
+        "lib": ["es2017", "dom"],
+        "sourceMap": true,
+        "baseUrl": "./src",
+        "paths": {
+            "@controller/*": ["app/controller/*"],
+            "@extend/*": ["app/extend/*"],
+            "@public/*": ["app/public/*"],
+            "@config/*": ["config/*"],
+            "@model/*": ["lib/model/*"],
+            "@service/*": ["lib/service/*"]
+        }
+    },
+    "exclude": ["node_modules", "dist", "src/app/public", "src/app/view", "test"]
+}

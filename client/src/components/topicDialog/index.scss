@@ -1,0 +1,59 @@
+
+@import '~@scss/mixin.scss';
+
+:local(.topic-dialog){
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    z-index: 2;
+    overflow-y: auto;
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        .close-btn {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            font-size: 40px;
+            font-weight: bold;
+            color: #fff;
+            cursor: pointer;
+        }
+        .topic {
+            position: relative;
+            height:  600px;
+            min-width: 935px;
+            margin: 0 auto;
+            background: #fff;
+            // 轮播图
+            .carousel {
+                position: absolute;
+                left: 0;
+                width: 600px;
+                height: 100%;
+            }
+
+            // 评论区
+            .comment {
+                position: absolute;
+                right: 0;
+                width: 335px;
+                height: 100%;
+                padding: 0 20px;
+                header {
+                    display: flex;
+                    align-items: center;
+                    height: 78px;
+                    border-bottom: 1px solid #efefef;
+                }
+            }
+
+        }
+    }
+}

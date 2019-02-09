@@ -1,0 +1,170 @@
+
+:local(.post-topic){
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.4);
+    z-index: 2;
+    .topic-content {
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);        
+        width: 450px;
+        background: #fff;
+        border-radius: 5px;
+        header {
+            padding-left: 15px;
+            height: 65px;
+            display: flex;
+            align-items: center;
+        }
+
+        .image-list {
+            height: 300px;
+            width: 100%;
+        }
+        .upload-style {
+            width: 100%;
+            border-style:dashed none;
+            border-width: 2px;
+            border-color: #cfcfcf;
+            background: #f2f2f2;
+        }
+        .image-upload {
+            width: 100%;
+            height: 196px;
+            display: flex;
+            justify-content: row;
+            div:first-child::after {
+                content: '';
+                position: absolute;
+                right: 0;
+                height: 80%;
+                width: 1px;
+                background: #b5b3b3;
+            }
+            div {
+                position: relative;
+                width: 50%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                color: #989898;
+                font-size: 14px;
+                .icon {
+                    display: inline-block;
+                    height: 40px;
+                    width: 40px;
+                    background-size: 100% 100%;
+                    cursor: pointer;
+                }
+                .camera {
+                    background-image: url('https://s10.mogucdn.com/mlcdn/c45406/181116_61d2kek95bcf474eclie22ibg6fi8_114x116.png');
+                }
+                .network {
+                    background-image: url('https://s10.mogucdn.com/mlcdn/c45406/181116_3fd65974967jc0ljgig0g2lb33acb_114x112.png');
+                }
+            }
+        }
+        
+        .placeholder {
+            position: absolute;
+            left: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        .input-url {
+            position: relative;
+            height: 36px;
+            &:hover .close-circle {
+                display: inline-block;
+            }   
+            .close-circle {
+                display: none;
+                position: absolute;
+                top: 0;
+                right: 0;
+                transform: translate(50%, -50%);
+                height: 20px;
+                width: 20px;
+            }
+            .notice {
+                &:hover .close-circle {
+                    display: inline-block;
+                }   
+                position: relative;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+                color: #989898;
+                cursor: pointer;
+                .icon {
+                    display: inline-block;
+                    height: 24px;
+                    width: 24px; 
+                    background-size: 100% 100%;
+                    background-image: url('https://s10.mogucdn.com/mlcdn/c45406/181116_3fd65974967jc0ljgig0g2lb33acb_114x112.png');
+                }
+            }
+            .input-container {
+                height: 100%;
+                width: 100%;
+                input {
+                    padding-left: 20px;
+                    padding-right: 35px;
+                    height: 100%;
+                    width: 100%;
+                    border: none;
+                    outline: none;
+                }
+            }
+        }
+
+        .descript {
+            padding: 20px;
+            border-bottom: 1px solid rgb(223, 222, 222);
+            textarea {
+                width: 100%;
+                height: 100%;
+                border: none;
+                outline: none;
+                resize:none;
+            }
+        }
+
+        .footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 60px;
+            span {
+                height: 30px;
+                width: 42px;
+                line-height: 30px;
+                text-align: center;
+                color: #fff;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            .close {
+                margin-left: 20px;
+                background-color: #9da6af;
+            }
+            .post {
+                margin-right: 20px;
+                background-color: #529ecc;
+            }
+        }
+    }
+}
+

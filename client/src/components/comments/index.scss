@@ -1,0 +1,104 @@
+
+@import '~@scss/mixin.scss';
+
+:local(.comments-section){
+    background: #fff;
+    // padding: 0 20px;
+
+    // 点赞、评论按钮
+    .opetions {
+        height: 40px;
+        margin: 0 auto;
+        line-height: 40px;
+        .fl-left {
+            height: 100%;
+        }
+        .comments, .favorite, .collect {
+            position: relative;
+            display: inline-block;
+            margin: 8px;
+            height: 24px;
+            width: 24px;
+            cursor: pointer;
+        }
+        .favorite {
+            margin-left: 0;
+            @include sprite-1x( -125px -112px);
+            &.active {
+                @include sprite-1x( -100px -112px);
+            }
+        }
+        .comments {
+            @include sprite-1x( 0 -187px);
+        }
+        .collect {
+            @include sprite-1x( -187px -25px);
+            &.active {
+                @include sprite-1x( -125px -162px);
+            }
+        }
+    }
+
+    // 点赞数
+    .dot-counts {
+        height: 18px;
+        margin-bottom: 10px;
+    }
+
+    // 评论列表
+    .comments-list {
+        width: 100%;
+        margin: 0;
+        .content {
+            margin: 5px 0;
+            .username {
+                margin-right: 10px;
+                font-weight: 600;
+            }
+            .replay-content {
+                font-weight: 400;
+                font-size: 13px;
+            }
+            &.show-more {
+                cursor: pointer;
+                font-weight: 500;
+            }
+        }
+        &.fill {
+            height: 360px;
+            overflow-y: auto;
+            border-bottom: 1px solid #efefef;
+        }
+    }
+
+    // 发表时间
+    .release-time {
+        font-size: 12px;
+        padding-bottom: 14px;
+        font-weight: bold;
+    }
+
+    // 评论框
+    .add-comments {
+        height: 56px;
+        border-top: 1px solid #efefef;
+        display: flex;
+        align-items: center;
+        input {
+            height: 100%;
+            flex: 1;
+            border: none;
+            outline: none;
+            &::-webkit-input-placeholder{ 
+                color: #999;
+            } 
+        }
+        .more {
+            display: inline-block;
+            height: 24px;
+            width: 24px;
+            cursor: pointer;
+            @include sprite-1x( -162px -50px);
+        }
+    }
+}

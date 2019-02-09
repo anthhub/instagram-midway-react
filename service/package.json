@@ -1,0 +1,35 @@
+{
+    "name": "instagram-midway",
+    "version": "1.0.0",
+    "private": true,
+    "dependencies": {
+        "egg": "^2.15.1",
+        "jsonwebtoken": "^8.4.0",
+        "midway": "^1.0.0",
+        "mysql2": "^1.6.1",
+        "qiniu": "^7.2.1",
+        "qiniu-js": "^2.5.3",
+        "sequelize": "^4.41.0",
+        "sequelize-typescript": "^0.6.6",
+        "tsconfig-paths": "^3.7.0"
+    },
+    "devDependencies": {
+        "midway-bin": "1",
+        "midway-demo-lib": "1",
+        "ts-node-dev": "^1.0.0-pre.32",
+        "tslint": "^5.12.1"
+    },
+    "engines": {
+        "node": ">=8.9.0"
+    },
+    "scripts": {
+        "start": "set NODE_ENV=local && midway-bin dev --ts",
+        "debug": "set NODE_ENV=local && midway-bin debug --ts",
+        "dev": "NODE_ENV=local && midway-bin dev --ts",
+        "debugger": "NODE_ENV=local midway-bin debug --ts",
+        "test": "midway-bin test --ts",
+        "cov": "midway-bin cov --ts",
+        "ci": "midway-bin cov --ts",
+        "build": "midway-bin build -c"
+    }
+}

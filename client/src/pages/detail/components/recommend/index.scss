@@ -1,0 +1,90 @@
+
+:local(.recommend){
+  width: 300px;
+  // 贴附样式
+  &.is-attach {
+    position: fixed;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    width: 300px;
+    padding-bottom: 10px;
+    // border-bottom: 1px solid #efefef;
+  }
+
+  // 发帖
+  .post {
+    margin-top: 20px;
+    height: 42px;
+    line-height: 42px;
+    border: 1px solid #efefef;
+    border-radius: 5px;
+    padding: 0 20px;
+    background: #fff;
+    text-align: center;
+    color: #c7c7c7;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  .container {
+    width: 300px;
+    max-height: 350px;
+    overflow: scroll;
+    border: 1px solid #efefef;
+    border-radius: 5px;
+    padding: 0 20px;
+    margin:  10px 0 20px;
+    background: #fff;
+    .title {
+      height: 46px;
+      color: #999;
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 46px;
+    }
+    .notice {
+      color: #c7c7c7;
+      font-size: 14px;
+      line-height: 18px;
+      margin-bottom: 16px;
+      margin-top: 4px;
+      width: 100%;
+    }
+    .more {
+        float: right;
+    }
+    .friend_photo {
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 18px;
+        color: #262626;
+        &:last-child{
+          margin: 0;
+        }
+        span {
+            font-size: 12px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .follow {
+            color: #3897f0;
+        }
+      }
+    }
+  }
+  .introduce {
+    margin-top: 10px;
+    font-size: 13px;
+    line-height: 19px;
+    color: #c9c9ca;
+    .brand {
+      margin-top: 22px;
+    }
+  }
+}
