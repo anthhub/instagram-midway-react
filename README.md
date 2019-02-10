@@ -2,9 +2,7 @@
 
 此项目并非原创, 源码来自于 zhoushaw , 感谢 zhoushaw 的开源 ;), 原项目链接: https://github.com/zhoushaw/Instagram.git
 
-前段时间了解到阿里的 Midway 框架 (基于 eggjs 的 Ioc 框架), 感受一下 Midway 的优雅, 重写了项目后台部分
-
-后台基本写完了, 后面希望能用 react, Typescript 以及 react hooks 再重构一下前台部分,敬请期待
+前段时间了解到阿里的 Midway 框架 (基于 eggjs 的 Ioc 框架), 所以结合业务体验一下 Midway , 重写了项目后台部分
 
 > 如果对您有帮助，您可以点右上角 "Star" 支持一下 谢谢！ ^_^
 
