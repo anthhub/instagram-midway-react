@@ -57,7 +57,7 @@
 
 因前后端不同端口原因，为解决跨域。前端  工程启动了 devServer，需先启动后端工程
 
-- git clone https://github.com/zhoushaw/Instagram.git
+- git clone https://github.com/anthhub/instagram-midway-react.git
 - cd instagram-midway-react
 
 > 运行后端项目
@@ -66,7 +66,7 @@
 - mysql -u root -p 并输入数据库密码
 - create database learn; 创建 learn 数据库
 - use learn; 切换数据库
-- source learn.sql 的路径; 例如：source /Users/shawzhou/Desktop/learning/instagram/db/learn.sql;
+- source learn.sql 的路径; 例如：source /Users/ThinkPad/Desktop/learning/instagram/db/learn.sql;
 - 配置 egg.js 连接数据库信息
 
 ```javascript
