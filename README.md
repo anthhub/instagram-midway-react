@@ -67,7 +67,7 @@
 - create database learn; 创建 learn 数据库
 - use learn; 切换数据库
 - source learn.sql 的路径; 例如：source /Users/ThinkPad/Desktop/learning/instagram/db/learn.sql;
-- 配置 egg.js 连接数据库信息
+- 配置 midway.js 连接数据库信息
 
 ```javascript
 // 前往service/src/config/config.default.ts，配置你的数据库信息
